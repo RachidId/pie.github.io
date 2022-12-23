@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --main-color: rgb(36, 38, 38);
+    --secondary-color: rgb(230, 33, 72);
+    --third-color: rgb(255, 0, 51);
+}
+
+body {
+    background-color: var(--main-color);
+    font-family: 'Noto Serif', serif;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.header {
+    height: 90px;
+    background-color: rgb(36, 38, 38);
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.header img {
+    width: 150px;
+    height: 100px;
+}
+
+.header ul {
+    display: flex;
+    align-items: center;
+}
+
+
+.header ul li {
+    list-style: none;
+    margin: 0 30px;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: rgb(255, 0, 51);
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 20px;
+    background-color:var(--main-color);
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.header ul li a:hover {
+    background-color:var(--secondary-color);
+    color: var(--main-color);
+}
+
+
+
+
+/*services*/
+
+.services .container {
+    display: flex; 
+}
+
+
+.services .container .list {
+    background-color: rgb(48, 46, 46);
+    width: 20%;
+}
+
+.services .container .list ul{
+    width: 90%;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.services .container .list ul li{
+    list-style: none;
+    margin: 40px auto;
+}
+
+.services .container .list ul li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: var(--third-color) ;
+    font-size: 15px; 
+    font-weight:700;
+}
+
+.services .container .list ul li a:hover{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: red;
+    text-shadow: 3px 3px 8px rgb(177, 177, 163);   
+    
+}
+
+.services .container .contain {
+    background-color: rgb(36, 38, 38);
+    width: 80%;
+    height: calc(100vh - 90px);
+
+}
+
+.services .container .contain form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.services .container .contain form input {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+    width: 80%;
+    height: 40px;
+    background-color: var(--third-color);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+.services .container .contain form input[type="submit"] {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 450px;
+    width: 30%;
+    height: 40px;
+    background-color: var(--third-color);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+.services .container .contain form textarea {
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 100px;
+    width: 80%;   
+    background-color: var(--third-color);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+}
+
+
+
+
+
